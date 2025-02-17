@@ -1,22 +1,22 @@
 package model.entities;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Installment {
-    private Date dueDate;
+    private LocalDateTime dueDate;
     private Double amount;
 
     public Installment(){}
-    public Installment(Date dueDate, Double amount) {
+    public Installment(LocalDateTime dueDate, Double amount) {
         this.dueDate = dueDate;
         this.amount = amount;
     }
 
-    public Date getDueDate() {
+    public LocalDateTime getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(LocalDateTime dueDate) {
         this.dueDate = dueDate;
     }
 
